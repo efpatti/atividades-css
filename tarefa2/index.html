@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loja de Periféricos</title>
+  <link rel="stylesheet" href="styles.css" />
+ </head>
+ <body>
+  <header>
+   <div class="logo">
+    <h1>Ferracini Store</h1>
+   </div>
+   <nav>
+    <ul>
+     <li><a href="#home">Início</a></li>
+     <li><a href="#produtos">Produtos</a></li>
+     <li><a href="#contato">Contato</a></li>
+    </ul>
+   </nav>
+  </header>
+
+  <section id="home" class="banner">
+   <h2>Bem-vindo à nossa loja de periféricos!</h2>
+   <p>Encontre os melhores produtos para seu setup</p>
+   <button onclick="scrollToProducts()">Ver Produtos</button>
+  </section>
+
+  <section id="produtos" class="produtos">
+   <h2>Nossos Produtos</h2>
+   <div class="produtos-lista">
+    <div class="produto">
+     <img
+      src="data:image/jpeg;base64,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"
+      alt="Mouse Gamer"
+     />
+     <h3>Mouse Gamer</h3>
+     <p>R$ 149,90</p>
+     <button onclick="adicionarAoCarrinho('Mouse Gamer', 149.90)">
+      Adicionar ao Carrinho
+     </button>
+    </div>
+    <div class="produto">
+     <img
+      src="https://images.kabum.com.br/produtos/fotos/472046/teclado-mecanico-gamer-kbm-gaming-tg600-preto-60-e-abnt2-rgb-switch-gateron-red-kgtg600ptvr_1713284146_gg.jpg"
+      alt="Teclado Mecânico"
+     />
+     <h3>Teclado Mecânico</h3>
+     <p>R$ 299,90</p>
+     <button onclick="adicionarAoCarrinho('Teclado Mecânico', 299.90)">
+      Adicionar ao Carrinho
+     </button>
+    </div>
+    <div class="produto">
+     <img
+      src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT3P-EmZ-KsShwOsy1BdHFuGXNKBvmxUkFZ-tVXrJqsF9whL24fvf7Xm1rn8is-t2mJp2-dSu_EbHQGWQ7IQdYVDeuXf1SwEkx8hNE76VgrKlQpVMLsyl1ArQ&usqp=CAE"
+      alt="Headset"
+     />
+     <h3>Headset</h3>
+     <p>R$ 199,90</p>
+     <button onclick="adicionarAoCarrinho('Headset', 199.90)">
+      Adicionar ao Carrinho
+     </button>
+    </div>
+   </div>
+  </section>
+
+  <section id="contato" class="contato">
+   <h2>Entre em Contato</h2>
+   <form action="#">
+    <input type="text" placeholder="Seu Nome" required />
+    <input type="email" placeholder="Seu Email" required />
+    <textarea placeholder="Mensagem" required></textarea>
+    <button type="submit">Enviar</button>
+   </form>
+  </section>
+
+  <footer>
+   <p>&copy; 2025 Periféricos Store - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+ </body>
+</html>

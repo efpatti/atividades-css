@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerador</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+ </head>
+ <body
+  class="bg-gray-100 font-sans text-gray-900 flex flex-col justify-center items-center h-screen"
+ >
+  <div
+   class="p-5 h-40 flex justify-center items-center shadow-2xl shadow-indigo-500 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-700 mb-12"
+  >
+   <h1
+    class="text-6xl text-white font-extrabold tracking-wide drop-shadow-lg animate__animated animate__fadeIn animate__delay-1s"
+   >
+    Gerador de Foto de Pets
+   </h1>
+  </div>
+
+  <div class="flex justify-center gap-8 flex-wrap mb-8">
+   <div
+    id="container-de-imagem-gato"
+    class="w-72 h-96 bg-purple-50 rounded-xl shadow-lg overflow-hidden flex justify-center items-center transition-all transform hover:scale-105 hover:shadow-2xl"
+   >
+    <img
+     id="imagem-de-gato"
+     class="w-full h-full object-cover rounded-xl opacity-0 transition-opacity duration-300"
+     src=""
+     alt="Imagem de gatinho"
+    />
+   </div>
+
+   <div
+    id="container-de-imagem-cachorro"
+    class="w-72 h-96 bg-purple-50 rounded-xl shadow-lg overflow-hidden flex justify-center items-center transition-all transform hover:scale-105 hover:shadow-2xl"
+   >
+    <img
+     id="imagem-de-cachorro"
+     class="w-full h-full object-cover rounded-xl opacity-0 transition-opacity duration-300"
+     src=""
+     alt="Imagem de cachorrinho"
+    />
+   </div>
+  </div>
+
+  <div class="flex justify-center gap-12">
+   <button
+    id="botao-de-foto-gato"
+    class="bg-violet-700 hover:bg-purple-500 text-white font-bold py-3 px-6 rounded-full transform transition duration-300 hover:scale-105 active:scale-95"
+   >
+    Foto de Gato &#128049;
+   </button>
+   <button
+    id="botao-de-foto-cachorro"
+    class="bg-violet-700 hover:bg-purple-500 text-white font-bold py-3 px-6 rounded-full transform transition duration-300 hover:scale-105 active:scale-95"
+   >
+    Foto de Cachorro &#128054;
+   </button>
+  </div>
+
+  <script src="script.js"></script>
+ </body>
+</html>

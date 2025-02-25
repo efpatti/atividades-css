@@ -1,0 +1,102 @@
+/* Reset básico */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: "Arial", sans-serif;
+ background: url(./uscs.jpg) no-repeat center center fixed;
+ background-size: cover;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #fff;
+ position: relative;
+}
+
+/* Adicionando a camada de fade preto */
+body::after {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: rgba(0, 0, 0, 0.5); /* Gradiente preto semi-transparente */
+ z-index: -1; /* Garante que a camada de fade fique atrás do conteúdo */
+}
+
+/* Container do login */
+.login-container {
+ width: 100%;
+ max-width: 400px;
+ padding: 30px;
+ border-radius: 10px;
+ box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+ background-color: rgba(22, 32, 119, 0.852); /* Fundo semitransparente */
+}
+
+/* Caixa do login */
+.login-box {
+ text-align: center;
+}
+
+h1 {
+ font-size: 2em;
+ margin-bottom: 20px;
+ color: #fff;
+}
+
+.textbox {
+ margin-bottom: 20px;
+ position: relative;
+}
+
+.textbox input {
+ width: 100%;
+ padding: 12px 20px;
+ border-radius: 5px;
+ border: 2px solid #006699;
+ background-color: #fff;
+ color: #333;
+ font-size: 1em;
+ transition: border 0.3s ease;
+}
+
+.textbox input:focus {
+ border: 2px solid #004466;
+ outline: none;
+}
+
+.btn {
+ width: 100%;
+ padding: 12px;
+ border-radius: 5px;
+ border: none;
+ background-color: #006699;
+ color: #fff;
+ font-size: 1.2em;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+ background-color: #004466;
+}
+
+.footer-links {
+ margin-top: 20px;
+ font-size: 0.9em;
+}
+
+.footer-links a {
+ color: #fff;
+ text-decoration: none;
+}
+
+.footer-links a:hover {
+ text-decoration: underline;
+}
